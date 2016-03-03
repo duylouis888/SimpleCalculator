@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/editTextSo1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -27,12 +27,12 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
+        android:id="@+id/editTextSo2"
+        android:layout_below="@+id/editTextSo1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/editTextSo1"
+        android:layout_alignEnd="@+id/editTextSo1"
         android:hint="Nhập số b" />
 
     <TextView
@@ -41,18 +41,18 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Kết quả:"
         android:id="@+id/textView"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/editTextSo2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="38dp"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button" />
+        android:layout_toLeftOf="@+id/btnCong"
+        android:layout_toStartOf="@+id/btnCong" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cộng"
-        android:id="@+id/button"
+        android:id="@+id/btnCong"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp" />
@@ -62,9 +62,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="0"
-        android:id="@+id/textView2"
-        android:layout_above="@+id/button"
+        android:id="@+id/textViewKetQua"
+        android:layout_above="@+id/btnCong"
         android:layout_toRightOf="@+id/textView"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
+        android:layout_alignRight="@+id/editTextSo2"
+        android:layout_alignEnd="@+id/editTextSo2" />
 </RelativeLayout>
